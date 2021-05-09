@@ -1,0 +1,57 @@
+#lang info
+
+;; pkg metadata
+(define deps '("base"))
+
+;; color scheme
+(define red     #(255   0   0))
+(define err     #(255   0   0))
+(define imp     #(255  98  98))
+(define comment #(231 192 192))
+(define str     #(205 141 141))
+(define const   #(153  70  70))
+(define bg-alt  #(136   0   0))
+(define bg      #( 57   0   0))
+(define kw      #(241  39  39))
+(define kw2     #(254 199  88))
+(define white   #(248 248 248))
+
+(define framework:color-schemes
+  `(#hash((name . "Luxury Functional Programmer")
+          (white-on-black-base? . #t)
+          (colors
+           .
+           ((framework:basic-canvas-background ,bg)
+            (framework:default-text-color ,white)
+            (framework:paren-match-color ,bg-alt)
+            (framework:syntax-color:scheme:comment ,comment)
+            (framework:syntax-color:scheme:constant ,const)
+            (framework:syntax-color:scheme:error ,white)
+            (framework:syntax-color:scheme:hash-colon-keyword ,kw)
+            (framework:syntax-color:scheme:keyword ,kw2)
+            (framework:syntax-color:scheme:string ,str)
+            (framework:syntax-color:scheme:text ,str)
+            (framework:syntax-color:scheme:other ,white)
+            (framework:syntax-color:scheme:parenthesis ,white)
+            (framework:syntax-color:scheme:symbol ,white)
+            (framework:line-numbers ,const)
+            (framework:line-numbers-current-line-number-foreground ,kw)
+            (framework:line-numbers-current-line-number-background ,red)
+            (drracket:language-name-and-memory-use-at-top-of-interactions ,imp bold)
+            (drracket:syncheck:document-identifier, const)
+            (drracket:syncheck:matching-identifiers, const)
+            (drracket:syncheck:template-arrow ,imp)
+            (drracket:syncheck:tail-arrow ,kw)
+            (drracket:syncheck:var-arrow ,kw2)
+            (drracket:read-eval-print-loop:error-color ,err)
+            (drracket:read-eval-print-loop:out-color ,kw2)
+            (drracket:read-eval-print-loop:value-color ,white)
+            (drracket:check-syntax:both-obligation-style-pref ,kw)
+            (drracket:check-syntax:free-variable ,white)
+            (drracket:check-syntax:imported ,imp bold)
+            (drracket:check-syntax:lexically-bound ,kw2)
+            (drracket:check-syntax:my-obligation-style-pref ,kw2)
+            (drracket:check-syntax:their-obligation-style-pref ,kw)
+            (drracket:check-syntax:unk-obligation-style-pref ,white)
+            (drracket:check-syntax:unused-require ,white))))))
+
