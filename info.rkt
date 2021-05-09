@@ -10,7 +10,7 @@
 (define comment #(231 192 192))
 (define str     #(205 141 141))
 (define const   #(153  70  70))
-(define bg-alt  #(136   0   0))
+(define bg-alt  #( 85   0   0))
 (define bg      #( 57   0   0))
 (define kw      #(241  39  39))
 (define kw2     #(254 199  88))
